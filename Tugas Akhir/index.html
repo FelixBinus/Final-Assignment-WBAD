@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+     <script src="js.js" defer></script>
+     <title>Home</title>
+</head>
+<body>
+
+     <header>
+          <h1>Penyewaan Mobil</h1>
+          <a href="./history.html"> <div class="history">
+               Daftar Pemesanan
+          </div></a>
+         
+     </header>
+
+     <main>
+          <div class="card" id="Avanza">
+               <img src="./asset/toyota-avanza-front-angle-low-view-844132.jpg" alt="Toyota Avanza">
+               <div class="desc">
+                    <p>Nama Mobil  : Toyota Avanza</p>
+                    <p>Harga Sewa  : Rp 500.000/hari</p>
+                    
+                    <div class="inp">
+                    <label for="date">Tanggal Mulai Sewa:</label>
+                    <br>
+                    <input type="date" name="mulai" id="mulai">
+                    <br>
+                    <br>
+                    <label for="number">Durasi Sewa (dalam Hari) :</label>
+                    <br>
+                    <input type="number" name="durasi" class="durasi" id="durasi-avanza">
+                    <br>
+                    <div class="box">
+                    <input type="checkbox" name="select" class="select" id="select-avanza">
+                    </div>
+                    </div>
+
+                    
+               </div>
+          </div>
+
+           <div class="card" id="Kijang">
+               <img src="./asset/1646473511_toyota-kijang-innova-tipe-g-paling-dicari.jpg" alt="Kijang Innova">
+               <div class="desc">
+                    <p>Nama Mobil  : Toyota Kijang Innova</p>
+                    <p>Harga Sewa  : Rp 700.000/hari</p>
+                    
+                    <div class="inp">
+                    <label for="date">Tanggal Mulai Sewa:</label>
+                    <br>
+                    <input type="date" name="mulai" id="mulai">
+                    <br>
+                    <br>
+                    <label for="number">Durasi Sewa (dalam Hari) :</label>
+                    <br>
+                    <input type="number" name="durasi" class="durasi"  id="durasi-kijang">
+                    <br>
+                    <div class="box">
+                    <input type="checkbox" name="select" class="select" id="select-kijang">
+                    </div>
+                    </div>
+
+                    
+               </div>
+          </div>
+
+           <div class="card" id="HRV">
+               <img src="./asset/honda-hr-v-2022-hibrido---europa.jpg" alt="Honda HRV">
+               <div class="desc">
+                    <p>Nama Mobil  : Honda HRV</p>
+                    <p>Harga Sewa  : Rp 600.000/hari</p>
+                    
+                    <div class="inp">
+                    <label for="date">Tanggal Mulai Sewa:</label>
+                    <br>
+                    <input type="date" name="mulai" id="mulai">
+                    <br>
+                    <br>
+                    <label for="number">Durasi Sewa (dalam Hari) :</label>
+                    <br>
+                    <input type="number" name="durasi" class="durasi" id="durasi-hrv">
+                    <br>
+                    <div class="box">
+                    <input type="checkbox" name="select" class="select" id="select-hrv">
+                    </div>
+                    </div>
+
+                    
+               </div>
+          </div>
+
+           <div class="card" id="Sigra">
+               <img src="./asset/9a61bc4cb9e66d822fa158619006a8fd.JPG" alt="Daihatsu Sigra">
+               <div class="desc">
+                    <p>Nama Mobil  : Daihatsu Sigra</p>
+                    <p>Harga Sewa  : Rp 450.000/hari</p>
+                    
+                    <div class="inp">
+                    <label for="date">Tanggal Mulai Sewa:</label>
+                    <br>
+                    <input type="date" name="mulai" id="mulai">
+                    <br>
+                    <br>
+                    <label for="number">Durasi Sewa (dalam Hari) :</label>
+                    <br>
+                    <input type="number" name="durasi" class="durasi" id="durasi-sigra">
+                    <br>
+                    <div class="box">
+                    <input type="checkbox" name="select" class="select" id="select-sigra">
+                    </div>
+                    </div>
+
+                    
+               </div>
+          </div>
+
+
+          <div class="form">
+               <label for="nama">Nama Pelanggan  :</label>
+               <input type="text" name="nama" id="nama">
+               <br><br>
+
+               <label for="total">Total Harga     :</label>
+               <button class="jumlah" onclick="jumlah()">Hitung Total</button>
+               <div id="ringkasan"></div>
+               <div id="container-total"></div>
+
+
+          
+          <button id="sewa" onclick="sewa()">Simpan Pemesanan</button>
+         
+          </div>
+          
+          
+     </main>
+     
+</body>
+</html>

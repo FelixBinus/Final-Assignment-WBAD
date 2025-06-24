@@ -1,0 +1,177 @@
+*{
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+h1{
+     width: 100%;
+  
+     padding: 20px;
+     background-color: beige;
+     text-align: center;
+}
+
+a{
+     text-decoration: none;
+}
+
+.history{
+     text-decoration: none;
+     color: black;
+     width: 100%;
+     padding: 10px;
+     background-color: rgb(238, 207, 170);
+     margin-bottom: 25px;
+     text-align: center;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.history:hover{
+     text-decoration: none;
+     cursor: pointer;
+     font-weight: 900;
+     background-color: bisque;
+     transition: 0.8s;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+main{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     gap: 20px;
+     justify-content: center;
+}
+
+.card{
+     padding: 10px;
+     border-radius: 20px;
+     width: 300px;
+     height: auto;
+     background-color:rgb(77, 77, 77);
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.card img{
+     border-radius: 20px;
+     height: 200px;
+     width: 100%;
+     object-fit: cover;
+}
+
+.desc{
+     padding: 10px;
+     line-height: 1.5;
+     
+    
+}
+
+.desc p{
+     text-decoration: none;
+     color: white;
+}
+
+.inp{
+     color: white;
+     margin-top: 10px;
+}
+
+#mulai{
+     background-color: white;
+     border: none;
+     padding: 2px;
+     border-radius: 5px;
+}
+
+.box{
+     display: flex;
+    
+}
+
+
+.durasi{
+     padding: 3px;
+     border-radius: 5px;
+     border: none;
+}
+
+.select{
+     margin-left: auto;
+     cursor: pointer;
+     transform: scale(1.5);
+}
+
+#sewa{
+     padding: 10px;
+     background-color: rgb(233, 233, 213);
+     border: none;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+     width: 100%;
+     margin-top: 50px;
+
+}
+
+#sewa:hover{
+     background-color: beige;
+     transition: 0.5s;
+     box-shadow: 0 2px 5px rgba(255, 201, 125, 0.5);
+}
+
+.form{
+     margin-top: 50px;
+     width: auto;
+     height: auto;
+     
+    
+    
+}
+
+#nama{
+     padding: 3px;
+     border-radius: 5px;
+     border: none;
+     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.jumlah{
+     padding: 5px;
+     background-color: rgb(36, 170, 67);
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+     color: white;
+}
+
+.jumlah:hover{
+     background-color: rgb(45, 217, 85);
+     transition: 0.2s;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 600px) {
+     main {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+     }
+
+     .card {
+          width: 90%;
+     }
+
+     .form {
+          width: 90%;
+     }
+
+     #sewa {
+          width: 90%;
+     }
+}

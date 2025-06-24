@@ -1,0 +1,130 @@
+*{
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+h1{
+     width: 100%;
+  
+     padding: 20px;
+     background-color: beige;
+     text-align: center;
+}
+
+a{
+     text-decoration: none;
+}
+
+.history{
+     text-decoration: none;
+     color: black;
+     width: 100%;
+     padding: 10px;
+     background-color: rgb(238, 207, 170);
+     margin-bottom: 25px;
+     text-align: center;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.history:hover{
+     text-decoration: none;
+     cursor: pointer;
+     font-weight: 900;
+     background-color: bisque;
+     transition: 0.8s;
+     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+main{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     gap: 20px;
+     justify-content: center;
+}
+
+.container{
+     width: 100%;
+     display: flex;
+     padding: 20px;
+     
+}
+
+.card {
+    color: black;
+     border-radius: 8px;
+     padding: 20px;
+     margin-bottom: 20px;
+     height: auto;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+     width: 400px;
+     max-width: 500px;
+}
+
+.card h3 {
+     margin-bottom: 10px;
+     font-size: 20px;
+     color: #333;
+}
+
+.card p {
+     margin: 5px 0;
+     font-size: 16px;
+     color: #555;
+}
+
+.del {
+     padding: 10px;
+     color: white;
+     background-color: rgb(200, 0, 0);
+     border: none;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.del:hover{
+     background-color: red;
+     transition: 0.5s;
+}
+
+.yar {
+     padding: 10px;
+     color: white;
+     background-color: rgb(0, 98, 0);
+     border: none;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.yar:hover{
+     background-color: green;
+     transition: 0.5s;
+}
+
+#riwayat{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #riwayat {
+        flex-direction: column;
+        align-items: center;
+    }
+}
